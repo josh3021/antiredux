@@ -11,7 +11,7 @@ class AppContainer extends React.Component {
         1: {
           id: 1,
           text: "something",
-          seen: false
+          seen: true
         },
         2: {
           id: 2,
