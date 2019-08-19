@@ -6,34 +6,24 @@ class AppContainer extends React.Component {
   constructor (props) {
     super(props);
 
-    this._changeMessage = () => {
-      if (this.state.message === "1st") {
-        this.setState({
-          message: "2nd"
-        });
-      }
-      else {
-        this.setState({
-          message: "1st"
-        });
-      }
-    }
-
-    this._countMessage = () => {
-      this.setState({
-        count: this.state.count + 1
-      }, () => {
-        this.setState({
-          message: this.state.count + "번"
-        })
-      });
-    }
-
     this.state = {
-      count: 0,
-      message: "0번",
-      changeMessage: this._changeMessage,
-      countMessage: this._countMessage
+      notifications: {
+        1: {
+          id: 1,
+          text: "something",
+          seen: false
+        },
+        2: {
+          id: 2,
+          text: "something 2",
+          seen: false
+        },
+        3: {
+          id: 3,
+          text: "something 3",
+          seen: false
+        }
+      }
     }
   }
   render () {
