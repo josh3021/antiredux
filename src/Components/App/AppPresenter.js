@@ -7,7 +7,7 @@ const AppPresenter = () => (
   <Fragment>
     <Header />
     <Flex alignCenter full column>
-      <Notification seen={false} />
+      <Notification text={"Hello"} seen={false} />
     </Flex>
   </Fragment>
 );
